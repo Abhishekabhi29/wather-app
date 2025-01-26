@@ -3,11 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
-    <div class="check">
-        <h1 class="boii">this is masdṇṅṇ,fy first h1</h1>
+    <div class="container">
+        <div class="search-box">
+            <input type="text" placeholder="Enter city name" id="cityInput">
+            <button id="searchBtn">Search</button>
+        </div>
+        <div class="dropdown">
+            <label for="topCities">Top Cities:</label>
+            <select id="topCities">
+                <option value="">Select a city</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Chitradurga">Chitradurga</option>
+                <option value="Kolar">Kolar</option>
+            </select>
+        </div>
+        <div class="weather-info">
+            <h2 id="city">City Name</h2>
+            <div class="temperature">
+                <img src="" alt="Weather Icon" id="weatherIcon">
+                <span id="temp">--</span>°C
+            </div>
+            <p id="description">Description</p>
+            <p>Humidity: <span id="humidity">--</span>%</p>
+            <p>Wind Speed: <span id="windSpeed">--</span> m/s</p>
+        </div>
     </div>
+    <script src="script.js"></script>
+</body>
 </html>

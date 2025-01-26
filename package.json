@@ -1,0 +1,12 @@
+{
+    "name": "weather-app",
+    "version": "1.0.0",
+    "description": "Weather app",
+    "scripts": {
+      "dev": "vite"
+    },
+    "devDependencies": {
+      "vite": "^4.4.9"
+    }
+  }
+  
