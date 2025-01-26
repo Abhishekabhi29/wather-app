@@ -47,7 +47,7 @@ function updateWeatherUI(data) {
     tempElement.textContent = Math.round(data.current.temp_c);
     descriptionElement.textContent = data.current.condition.text;
     humidityElement.textContent = data.current.humidity;
-    windSpeedElement.textContent = data.current.wind_kph / 3.6; // Convert km/h to m/s
+    windSpeedElement.textContent = data.current.wind_kph / 3.6;
 
     const iconCode = data.current.condition.icon;
     weatherIconElement.src = `https:${iconCode}`;
